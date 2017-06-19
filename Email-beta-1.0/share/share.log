@@ -1,0 +1,117 @@
+2017-06-17 13:32:01,493 ERROR [org.springframework.extensions.config.BaseConfigService] [localhost-startStop-1] Input stream invalid - skipped for source: jar:file:/home/tushar/workspace1/EV_8/share/target/amp-war/WEB-INF/lib/share-1.0-SNAPSHOT.jar!/META-INF/share-config-custom.xml' 
+org.springframework.extensions.config.ConfigException: 05170000 Failed to parse config stream
+	at org.springframework.extensions.config.xml.XMLConfigService.parse(XMLConfigService.java:224)
+	at org.springframework.extensions.config.BaseConfigService.appendConfig(BaseConfigService.java:268)
+	at org.springframework.extensions.config.BaseConfigService.parse(BaseConfigService.java:298)
+	at org.springframework.extensions.config.xml.XMLConfigService.initConfig(XMLConfigService.java:132)
+	at org.springframework.extensions.config.BaseConfigService.init(BaseConfigService.java:95)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeCustomInitMethod(AbstractAutowireCapableBeanFactory.java:1640)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1581)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1511)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:521)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:458)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:293)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:290)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:191)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:636)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:934)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:410)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.dom4j.DocumentException: Error on line 1 of document  : Premature end of file. Nested exception: Premature end of file.
+	at org.dom4j.io.SAXReader.read(SAXReader.java:482)
+	at org.dom4j.io.SAXReader.read(SAXReader.java:343)
+	at org.springframework.extensions.config.xml.XMLConfigService.parse(XMLConfigService.java:212)
+	... 32 more
+2017-06-17 13:32:05,584 INFO  [org.alfresco.web.config.packaging.ModulePackageManager] [localhost-startStop-1] Found 2 module package(s)
+2017-06-17 13:32:05,584 INFO  [org.alfresco.web.config.packaging.ModulePackageManager] [localhost-startStop-1] share AMP project, 1.0-SNAPSHOT, Manages the lifecycle of the share AMP (Alfresco Module Package)
+share AMP project, 1.0-SNAPSHOT, Manages the lifecycle of the share AMP (Alfresco Module Package)
+
+2017-06-17 13:32:06,150 INFO  [org.springframework.extensions.webscripts.TemplateProcessorRegistry] [localhost-startStop-1] Registered template processor freemarker for extension ftl
+2017-06-17 13:32:06,153 INFO  [org.springframework.extensions.webscripts.ScriptProcessorRegistry] [localhost-startStop-1] Registered script processor javascript for extension js
+2017-06-17 13:32:06,154 INFO  [org.springframework.extensions.webscripts.TemplateProcessorRegistry] [localhost-startStop-1] Registered template processor freemarker for extension ftl
+2017-06-17 13:32:06,155 INFO  [org.springframework.extensions.webscripts.ScriptProcessorRegistry] [localhost-startStop-1] Registered script processor javascript for extension js
+2017-06-17 13:32:08,891 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] [localhost-startStop-1] Registered 383 Web Scripts (+0 failed), 401 URLs
+2017-06-17 13:32:08,891 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] [localhost-startStop-1] Registered 8 Package Description Documents (+0 failed) 
+2017-06-17 13:32:08,891 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] [localhost-startStop-1] Registered 0 Schema Description Documents (+0 failed) 
+2017-06-17 13:32:08,976 ERROR [org.springframework.extensions.config.BaseConfigService] [localhost-startStop-1] Input stream invalid - skipped for source: jar:file:/home/tushar/workspace1/EV_8/share/target/amp-war/WEB-INF/lib/share-1.0-SNAPSHOT.jar!/META-INF/share-config-custom.xml' 
+org.springframework.extensions.config.ConfigException: 05170001 Failed to parse config stream
+	at org.springframework.extensions.config.xml.XMLConfigService.parse(XMLConfigService.java:224)
+	at org.springframework.extensions.config.BaseConfigService.appendConfig(BaseConfigService.java:268)
+	at org.springframework.extensions.config.BaseConfigService.parse(BaseConfigService.java:298)
+	at org.springframework.extensions.config.xml.XMLConfigService.initConfig(XMLConfigService.java:132)
+	at org.springframework.extensions.config.BaseConfigService.reset(BaseConfigService.java:145)
+	at org.springframework.extensions.webscripts.AbstractRuntimeContainer.reset(AbstractRuntimeContainer.java:260)
+	at org.springframework.extensions.webscripts.PresentationContainer.reset(PresentationContainer.java:121)
+	at org.springframework.extensions.webscripts.LocalWebScriptRuntimeContainer.reset(LocalWebScriptRuntimeContainer.java:121)
+	at org.springframework.extensions.webscripts.AbstractRuntimeContainer.onApplicationEvent(AbstractRuntimeContainer.java:280)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:334)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:950)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:482)
+	at org.springframework.web.context.ContextLoader.configureAndRefreshWebApplicationContext(ContextLoader.java:410)
+	at org.springframework.web.context.ContextLoader.initWebApplicationContext(ContextLoader.java:306)
+	at org.springframework.web.context.ContextLoaderListener.contextInitialized(ContextLoaderListener.java:112)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:4939)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5434)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1559)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1549)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.dom4j.DocumentException: Error on line 1 of document  : Premature end of file. Nested exception: Premature end of file.
+	at org.dom4j.io.SAXReader.read(SAXReader.java:482)
+	at org.dom4j.io.SAXReader.read(SAXReader.java:343)
+	at org.springframework.extensions.config.xml.XMLConfigService.parse(XMLConfigService.java:212)
+	... 24 more
+2017-06-17 13:32:08,979 INFO  [org.springframework.extensions.webscripts.AbstractRuntimeContainer] [localhost-startStop-1] Initialised Spring Surf Container Web Script Container (in 2807.8403ms)
+2017-06-17 13:32:08,981 INFO  [org.springframework.extensions.webscripts.TemplateProcessorRegistry] [localhost-startStop-1] Registered template processor freemarker for extension ftl
+2017-06-17 13:32:08,982 INFO  [org.springframework.extensions.webscripts.ScriptProcessorRegistry] [localhost-startStop-1] Registered script processor javascript for extension js
+2017-06-17 13:33:15,599 INFO  [org.alfresco.web.config.packaging.ModulePackageManager] [localhost-startStop-1] Found 2 module package(s)
+2017-06-17 13:33:15,600 INFO  [org.alfresco.web.config.packaging.ModulePackageManager] [localhost-startStop-1] share AMP project, 1.0-SNAPSHOT, Manages the lifecycle of the share AMP (Alfresco Module Package)
+share AMP project, 1.0-SNAPSHOT, Manages the lifecycle of the share AMP (Alfresco Module Package)
+
+2017-06-17 13:33:16,074 INFO  [org.springframework.extensions.webscripts.TemplateProcessorRegistry] [localhost-startStop-1] Registered template processor freemarker for extension ftl
+2017-06-17 13:33:16,078 INFO  [org.springframework.extensions.webscripts.ScriptProcessorRegistry] [localhost-startStop-1] Registered script processor javascript for extension js
+2017-06-17 13:33:16,078 INFO  [org.springframework.extensions.webscripts.TemplateProcessorRegistry] [localhost-startStop-1] Registered template processor freemarker for extension ftl
+2017-06-17 13:33:16,080 INFO  [org.springframework.extensions.webscripts.ScriptProcessorRegistry] [localhost-startStop-1] Registered script processor javascript for extension js
+2017-06-17 13:33:18,701 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] [localhost-startStop-1] Registered 383 Web Scripts (+0 failed), 401 URLs
+2017-06-17 13:33:18,701 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] [localhost-startStop-1] Registered 8 Package Description Documents (+0 failed) 
+2017-06-17 13:33:18,701 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] [localhost-startStop-1] Registered 0 Schema Description Documents (+0 failed) 
+2017-06-17 13:33:18,774 INFO  [org.springframework.extensions.webscripts.AbstractRuntimeContainer] [localhost-startStop-1] Initialised Spring Surf Container Web Script Container (in 2654.2083ms)
+2017-06-17 13:33:18,776 INFO  [org.springframework.extensions.webscripts.TemplateProcessorRegistry] [localhost-startStop-1] Registered template processor freemarker for extension ftl
+2017-06-17 13:33:18,777 INFO  [org.springframework.extensions.webscripts.ScriptProcessorRegistry] [localhost-startStop-1] Registered script processor javascript for extension js
+2017-06-17 13:49:16,969 INFO  [org.alfresco.web.site.EditionInterceptor] [http-bio-8081-exec-1] Successfully retrieved license information from Alfresco.
+2017-06-17 13:49:59,450 INFO  [org.alfresco.web.scripts.ImapServerStatus] [http-bio-8081-exec-11] Successfully retrieved IMAP server status from Alfresco: disabled
+2017-06-17 13:52:43,853 INFO  [org.alfresco.web.scripts.DictionaryQuery] [http-bio-8081-exec-1] Successfully retrieved Data Dictionary from Alfresco.
+2017-06-17 13:52:48,392 INFO  [org.alfresco.web.scripts.QuickShareStatus] [http-bio-8081-exec-12] Successfully retrieved quick share information from Alfresco.
+2017-06-17 13:52:50,326 INFO  [org.alfresco.web.scripts.MimetypesQuery] [http-bio-8081-exec-12] Successfully retrieved mimetypes information from Alfresco.
+2017-06-17 16:32:54,809 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] [http-bio-8081-exec-3] Registered 383 Web Scripts (+0 failed), 401 URLs
+2017-06-17 16:32:54,810 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] [http-bio-8081-exec-3] Registered 8 Package Description Documents (+0 failed) 
+2017-06-17 16:32:54,810 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] [http-bio-8081-exec-3] Registered 0 Schema Description Documents (+0 failed) 
+2017-06-17 16:32:54,860 INFO  [org.springframework.extensions.webscripts.AbstractRuntimeContainer] [http-bio-8081-exec-3] Initialised Spring Surf Container Web Script Container (in 4349.47ms)
+2017-06-17 16:32:59,534 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] [http-bio-8081-exec-2] Registered 383 Web Scripts (+0 failed), 401 URLs
+2017-06-17 16:32:59,534 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] [http-bio-8081-exec-2] Registered 8 Package Description Documents (+0 failed) 
+2017-06-17 16:32:59,534 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] [http-bio-8081-exec-2] Registered 0 Schema Description Documents (+0 failed) 
+2017-06-17 16:32:59,573 INFO  [org.springframework.extensions.webscripts.AbstractRuntimeContainer] [http-bio-8081-exec-2] Initialised Spring Surf Container Web Script Container (in 4184.4277ms)
+2017-06-17 16:33:05,117 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] [http-bio-8081-exec-12] Registered 383 Web Scripts (+0 failed), 401 URLs
+2017-06-17 16:33:05,117 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] [http-bio-8081-exec-12] Registered 8 Package Description Documents (+0 failed) 
+2017-06-17 16:33:05,117 INFO  [org.springframework.extensions.webscripts.DeclarativeRegistry] [http-bio-8081-exec-12] Registered 0 Schema Description Documents (+0 failed) 
+2017-06-17 16:33:05,153 INFO  [org.springframework.extensions.webscripts.AbstractRuntimeContainer] [http-bio-8081-exec-12] Initialised Spring Surf Container Web Script Container (in 4090.8152ms)
