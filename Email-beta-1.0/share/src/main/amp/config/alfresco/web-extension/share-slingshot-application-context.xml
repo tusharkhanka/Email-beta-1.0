@@ -44,6 +44,9 @@
             <value>jb:emailableWithHistory</value>
          </list>
       </property>
-   </bean>       
+   </bean>
+
+	<bean id="evaluator.doclib.action.OnSendEmailPermitedUser"
+		class="emailAction.OnSendEmailPermitedUser" />       
 
 </beans>

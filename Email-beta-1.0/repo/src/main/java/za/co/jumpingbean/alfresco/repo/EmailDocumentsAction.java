@@ -89,7 +89,7 @@ public class EmailDocumentsAction extends ActionExecuterAbstractBase {
             NodeRef user = serviceRegistry.getPersonService().getPerson(userName);
             String address = (String)nodeService.getProperty(user, ContentModel.PROP_EMAIL);
     		mimeMessage.setFrom(new InternetAddress(address));
-    		/*mimeMessage.setFrom(new InternetAddress((String) action.getParameterValue(PARAM_FROM)));*/
+/*    		mimeMessage.setFrom(new InternetAddress((String) action.getParameterValue(PARAM_FROM)));*/
             if (action.getParameterValue(PARAM_BCC)!=null){
                 mimeMessage.setRecipients(Message.RecipientType.BCC,(String) action.getParameterValue(PARAM_BCC));
             }
