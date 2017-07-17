@@ -21,7 +21,7 @@
     <bean id="emaildocuments_resources" class="org.springframework.extensions.surf.util.ResourceBundleBootstrapComponent">
         <property name="resourceBundles">
             <list>
-                <value>alfresco.module.repo.messages.language</value>
+                <value>alfresco.module.E-mail_repo.messages.language</value>
             </list>
         </property>
     </bean>  
