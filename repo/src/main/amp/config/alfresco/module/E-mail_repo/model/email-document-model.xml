@@ -28,6 +28,9 @@
 				<property name="jb:to">
 					<type>d:text</type>
 				</property>
+				<property name="jb:attachments">
+					<type>d:text</type>
+				</property>
 			</properties>
 
 			`
@@ -44,18 +47,24 @@
 						<many>false</many>
 					</target>
 				</association>
-				<association name="jb:attachments">
-					<title>Attachments</title>
-					<source>
-						<mandatory>false</mandatory>
-						<many>true</many>
-					</source>
-					<target>
-						<class>cm:cmobject</class>
-						<mandatory>true</mandatory>
-						<many>true</many>
-					</target>
-				</association>
+		<!-- commenter Tushar Khanka -->
+		<!-- This association is not a bug it is a feature where document can be linked to document library from  Email Archive Data List.
+		      and hence the Association is made. Now to delete the sent Document, the record has to be deleted from data list only then the 			      document can be deleted from Document Library.
+		      uncomment jb:attachments association and comment out property jb:attachments
+		      following steps are on EmailDocumentsWithHistoryAction.java -->
+				
+			<!-- <association name="jb:attachments">
+				<title>Attachments</title>
+				<source>
+					<mandatory>false</mandatory>
+					<many>true</many>
+				</source>
+				<target>
+					<class>cm:cmobject</class>
+					<mandatory>true</mandatory>
+					<many>true</many>
+				</target>
+			</association> -->
 			</associations>
 			<mandatory-aspects>
 				<aspect>jb:emailTemplate</aspect>

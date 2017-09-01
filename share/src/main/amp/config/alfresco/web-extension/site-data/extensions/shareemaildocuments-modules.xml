@@ -183,9 +183,9 @@
                             <appearance>
                                 <show id="jb:sender" />
                                 <field id="jb:attachments">
-                                    <control>
+                                    <!-- <control>
                                         <control-param name="startLocation">{doclib}</control-param>
-                                    </control>
+                                    </control> -->
                                 </field>
                                 <field id="jb:body">
                                     <control template="/org/alfresco/components/form/controls/textarea.ftl" />
@@ -229,9 +229,9 @@
                             <appearance>
                                 <field id="jb:bcc" mandatory="false" />
                                 <field id="jb:attachments">
-                                    <control>
+                                    <!-- <control>
                                         <control-param name="startLocation">{doclib}</control-param>
-                                    </control>
+                                    </control> -->
                                 </field>
                                 <field id="jb:body">
                                     <control template="/org/alfresco/components/form/controls/textarea.ftl" />

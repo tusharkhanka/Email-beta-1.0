@@ -93,7 +93,8 @@ public class EmailDocumentsWithHistoryAction extends EmailDocumentsAction {
             contentProps.put(EmailDocumentsAction.SUBJECT, action.getParameterValue(PARAM_SUBJECT));
             contentProps.put(EmailDocumentsAction.BODY, action.getParameterValue(PARAM_BODY));
             contentProps.put(EmailDocumentsAction.SENDER,personService.getPerson(this.authenticationService.getCurrentUserName()));
-            contentProps.put(EmailDocumentsAction.ATTACHMENT,nodeRef);
+	    /*contentProps.put(EmailDocumentsAction.ATTACHMENT, nodeRef);*/
+	    contentProps.put(EmailDocumentsAction.ATTACHMENT, nodeService.getProperty(nodeRef, ContentModel.PROP_NAME));
             contentProps.put(EmailDocumentsAction.DATESENT, new Date());
             contentProps.put(EmailDocumentsAction.CONVERT, action.getParameterValue(PARAM_CONVERT));
 
@@ -103,9 +104,20 @@ public class EmailDocumentsWithHistoryAction extends EmailDocumentsAction {
             nodeService.createAssociation(ref.getChildRef(),
                     personService.getPerson(this.authenticationService.getCurrentUserName()),
                     EmailDocumentsAction.SENDER);
-            nodeService.createAssociation(ref.getChildRef(),
-                    nodeRef,
-                    EmailDocumentsAction.ATTACHMENT);
+        /* Commenter: Tushar Khanka
+			 
+	 *   This association is not a bug it is a feature where document can be linked to document library from  Email Archive Data List.
+	 *   And hence the Association is made. Now to delete the sent Document, the record has to be deleted from data list only then the document can 	     be deleted from Document Library.
+	 *	 
+	 *	 Uncomment the following nodeService.
+	 *	 Uncomment line 96 and comment out line 97.
+	 *	 following steps are on email-document-model.xml.
+	 */	 
+            
+            
+            /*nodeService.createAssociation(ref.getChildRef(),
+            		nodeRef,
+                    EmailDocumentsAction.ATTACHMENT);*/
         } catch (AuthenticationException | InvalidTypeException | AssociationExistsException | InvalidNodeRefException | InvalidQNameException ex) {
             logger.error("Error performing action" + ex.getMessage());
             logger.error(ex);
